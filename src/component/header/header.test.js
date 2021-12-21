@@ -9,16 +9,16 @@ const setup = (props = {}) => {
 };
 
 describe("Header Component", () => {
-  let component;
-  beforeEach(() => (component = setup()));
+  let wrapper;
+  beforeEach(() => (wrapper = setup()));
 
   it("Should render without errors", () => {
-    const wrapper = getByTestAttr(component, "headerComponent");
-    expect(wrapper.length).toBe(1);
+    const component = getByTestAttr(wrapper, "headerComponent");
+    expect(component.length).toBe(1);
   });
 
   it("Should render a logo", () => {
-    const logo = getByTestAttr(component, "logoImg");
+    const logo = getByTestAttr(wrapper, "logoImg");
     expect(logo.length).toBe(1);
   });
 });
