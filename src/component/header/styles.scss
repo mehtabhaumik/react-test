@@ -1,0 +1,24 @@
+header {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  background: #333;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 6rem;
+
+    .logo {
+      display: block;
+      max-width: 10rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
